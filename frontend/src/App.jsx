@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
 import CustomerDashboard from './pages/CustomerDashboard';
 import BankDashboard from './pages/BankDashboard';
+import CreditScore from './pages/CreditScore';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
         {/* Define routes for the dashboards */}
         <Route path="/customer-dashboard" element={<CustomerDashboard />} />
+        <Route path="/customer-dashboard/credit-score" element={<CreditScore />} />
         <Route path="/bank-dashboard" element={<BankDashboard />} />
         
         {/* Add a default route to redirect to the login page */}

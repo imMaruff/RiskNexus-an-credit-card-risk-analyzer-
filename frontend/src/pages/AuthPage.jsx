@@ -118,9 +118,6 @@ const AuthPage = () => {
     } else { // Sign In Logic
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        // ** REDIRECTION LOGIC **
-        // In a real app, you would fetch the user's role from Firestore here
-        // For now, we redirect based on the toggle for simplicity
         if (userType === 'customer') {
           navigate('/customer-dashboard');
         } else {
@@ -158,7 +155,7 @@ const AuthPage = () => {
     <div className="auth-container-new">
       <div className="auth-card-new">
         <div className="auth-header">
-          <h1>CreditRisk</h1>
+          <h1>RiskNexus</h1>
           <p>Advanced Credit Risk Analysis Platform</p>
         </div>
         <div className="user-type-selector">
